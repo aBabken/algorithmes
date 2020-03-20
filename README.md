@@ -1,7 +1,8 @@
 # Algorithms
 **All basic algorithms in JavaScript** 🖤🖤🖤
 ---
-```console.log("Hello JavaScript Developers")```
+```console.log(" Hello JavaScript Developers ")```
+***
 Знаете, а почему бы не представить множество полезных алгоритмов на нашем любимом JavaScript. Думаю многим понравится, и даже понадобиться.
 
 
