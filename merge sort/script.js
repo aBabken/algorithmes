@@ -22,7 +22,7 @@ const merge = (first, second) => {
 
     let arr = [];                                                       // Our sorted an array
                                                                         // Массив для заполнения
-    let i = 0,                                                          // Our indexes for cycle 
+    let i = 0,                                                          // Our index for cycle 
         k = 0;                                                          // Наши индексы для цикла
 
     while (i < first.length && k < second.length) {                     // The cycle where we exit if one of the array is empty when one of the indexes change 
