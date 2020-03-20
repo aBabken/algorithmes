@@ -1,5 +1,5 @@
 # Algorithms
-**All basic algorithms in JavaScript** 🖤🖤🖤
+*All basic algorithms in JavaScript* 🖤🖤🖤
 ---
 ```console.log(" Hello JavaScript Developers ")```
 ***
