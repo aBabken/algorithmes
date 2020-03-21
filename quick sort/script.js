@@ -2,15 +2,26 @@
 // Алгоритм пропускает одинаковые элементы
 
 function quickSort(arr) {
-    if (arr.length < 2) {                                                           // Условие для рекурсии
-        return arr;
+
+    if (!Array.isArray(arr)) return new Error("Type of 'arr' is not an array");         // Если наш массив не массив, тогда выдаем ошибку
+
+    if (arr.length < 2) {                                                               // Условие для рекурсии
+
+        return arr;                                                                     // Возращаем массив
+
     } else {
-        let pivot = arr[Math.floor(arr.length/2)];                                  // Наш опорный элемент
-        let less = arr.filter(a => a < pivot);                                      // Фильтрируем массив на элементы меньшие опорного
-        let greater = arr.filter(a => a > pivot);                                   // Фильтрируем массив на элементы большие опорного
-        return [...quickSort(less), pivot, ...quickSort(greater)]                   // Возвращаем массив с конкатенацией функции и опорного элемента, тем самым начиная рекурсию по системе 
-                                                                                    // "Разделяй и властвуй"
+
+        let pivot = arr[Math.floor(arr.length/2)];                                      // Наш опорный элемент
+
+        let less = arr.filter(a => a < pivot);                                          // Фильтрируем массив на элементы меньшие опорного
+        
+        let greater = arr.filter(a => a > pivot);                                       // Фильтрируем массив на элементы большие опорного
+            
+        return [...quickSort(less), pivot, ...quickSort(greater)]                       // Возвращаем массив с конкатенацией функции и опорного элемента, тем самым начиная рекурсию по системе 
+                                                                                        // "Разделяй и властвуй"
+
     }
-}
+
+}   
 
 console.log(quickSort([2,5,6,3,1,7]))
